@@ -1,0 +1,7 @@
+except.o: except.cpp except.h
+expr.o: expr.cpp expr.h parser.h node.h except.h
+func.o: func.cpp defs.h funclist.h node.h parser.h except.h
+funclist.o: funclist.cpp funclist.h except.h node.h parser.h
+node.o: node.cpp node.h parser.h expr.h vallist.h funclist.h except.h
+parser.o: parser.cpp parser.h node.h except.h funclist.h expr.h
+vallist.o: vallist.cpp defs.h vallist.h except.h
